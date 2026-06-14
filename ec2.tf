@@ -1,6 +1,6 @@
 
 resource "aws_instance" "nginx-server" {
-    ami="ami-0c4fc5dcabc9df21d"
+    ami="ami-0e38835daf6b8a2b9"
     instance_type="t3.micro"
     subnet_id=aws_subnet.public-subnet.id
     vpc_security_group_ids = [aws_security_group.nginx-sg.id]
